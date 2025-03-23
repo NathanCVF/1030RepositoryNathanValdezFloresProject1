@@ -28,18 +28,20 @@
     <div id="nav-placeholder"></div>
 
     <!-- Content of webpage -->
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h1>Nathan Valdez Flores, who am I?</h1>
     </div>
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
+      <!--Container with the background color warning/subtle yellow with a black emphasised text-->
       <p>
         I am a more mellow individual with a Hispanic background. Born in Denver
         Colorado, I've lived here my whole life. My current career goal is to be
-        a game developer.
+        a game developer. I have a 4 year old dog named Jade, well we call her
+        that but her full name is Bella Jade.
       </p>
     </div>
 
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h2>What Are My Achievements?</h2>
 
       <ol>
@@ -48,21 +50,23 @@
         <li>Invested in expressive arts and crafts</li>
       </ol>
     </div>
-
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <!--Ol and Li will be used for most of the website, unless it is a summary, this will create a numerically ordered list to make it easier for those with autism and dyslexia-->
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h2>Major and college</h2>
       <p>
         I am a student at MSU Denver, this is my first year at the college. My
         major is computer science, and I do not have a minor yet.
       </p>
-      <p>
-        <a href="https://www.msudenver.edu/computer-sciences/"
-          >Click here to see more info on my major</a
-        >
-      </p>
+      <a
+        href="https://www.msudenver.edu/computer-sciences/"
+        class="btn btn-danger"
+        role="button"
+        >Click here to see more info on my major</a
+      >
+      <!--From here on, we will use buttons with class="btn btn-#" and role=button, high contrast. It is easier for those with motor disabilitie, as it is doesnt need the same precision to click.-->
     </div>
 
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h2>What are my technical/usable skills?</h2>
       <ol>
         <li>Basic graphic design level</li>
@@ -83,7 +87,7 @@
       </ol>
     </div>
 
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h2>What are the things I enjoy?</h2>
       <ol>
         <li>Video games</li>
@@ -92,22 +96,129 @@
         <li>Music</li>
         <li>Cosplay</li>
         <li>Gym workouts</li>
+        <li>Playing with my chihuahua</li>
       </ol>
     </div>
-    
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
+    <!--Concerning Carosel, attempted shrinking crashes, but ultimately functional-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Carousel</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+        <div class="container bg-warning-subtle">
+          <h2>What I Love Having the Most</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!--The images I have given are being sorted in order of where they are. We always start at 0 to demonstrate the first image or term. This segment decides what order my images will transition to, while class-"active" will tell it to turn on and transitioning imagew.-->
+            <!--The class=items are variables that will be sorted and listed in carousel indicators as "targets", or the objects that will be affected-->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  src="https://cdn.pixabay.com/photo/2013/07/12/18/42/paintbrush-153754_1280.png"
+                  alt="Art"
+                  style="width: 50%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="https://cdn.pixabay.com/photo/2020/05/15/09/06/ps4-5172918_1280.png"
+                  alt="PS4 Controller"
+                  style="width: 75%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="https://cdn.pixabay.com/photo/2020/11/12/05/25/music-5734435_1280.png"
+                  alt="Music"
+                  style="width: 75%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="https://cdn.pixabay.com/photo/2024/09/23/19/50/ai-generated-9069918_1280.png"
+                  alt="Chihuahua"
+                  style="width: 50%"
+                />
+              </div>
+            </div>
+            <!--These are the images that the carousel will panel through. More specifically they are classified as items and variables for the carousel to number and organize.-->
+            <!--Concerning Carousel, functional but seems heavily dependent on the entire structure, or dome other compromise. Size still cannot be fixed but at least now it panels automatically.-->
+
+            <!-- Left and right controls -->
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--To my understanding, span class in a sense acts as an ingrained text container, it can even be given a command or function. For the carousel it ends up allowing us to both manually and automatically change slides with something like the right carousel-control, as it affects listed and named variables like the ones I kept as "#myCarousel". What's written inside this bit doesn't seem to affect the outside appearance, so I can edit what is necessary without breaking the code.-->
+          </div>
+        </div>
+      </body>
+    </html>
+
+    <div class="container bg-warning-subtle text-black-emphasis p-3">
       <h2>More Information About What I Like and My Favorites</h2>
-      <p>Video games are one of my favorite pass times, and I like quite a few. I primarily like shooters and soulslike games, with my favorite game being Destiny 2. Don't get your hopes up though, the game is a loose cannon</p>
-      <a href="https://www.youtube.com/watch?v=k5jSaZn3zMk"
-          >Click here if you want to see what my favorite games Destiny is</a
-        >
-      
       <p>
-        For my other favorite pass time, it would be digital art. It could be 2d or 3d, I love both quite a bit. But among them, my favorite art would be anime art, though I'm a bit darker on how I do it. I plan on making my own little story someday.
+        Video games are one of my favorite pass times, and I like quite a few. I
+        primarily like shooters and soulslike games, with my favorite game being
+        Destiny 2. Don't get your hopes up though, the game is a loose cannon
       </p>
-      <a href="https://www.wingedcanvas.com/single-post/the-anime-art-style-why-is-it-so-popular"
-          >Click here if you want to see what anime and anime art are</a
-        >
+
+      <a
+        href="https://www.youtube.com/watch?v=k5jSaZn3zMk"
+        class="btn btn-danger"
+        role="button"
+        >Click here if you want to see what Destiny 2 is about</a
+      >
+      <!--The first video I've placed in, the video is chosen to have captions to make it so those who are deaf can read them if interested-->
+      <p>
+        For my other favorite pass time, it would be digital art. It could be 2d
+        or 3d, I love both quite a bit. But among them, my favorite art would be
+        anime art, or in other words manga. Though I'm a bit darker on how I do
+        it. I plan on making my own little story someday.
+      </p>
+      <a
+        href="https://www.wingedcanvas.com/single-post/the-anime-art-style-why-is-it-so-popular"
+        class="btn btn-danger"
+        role="button"
+        >Click here to explore different manga art styles and genres</a
+      >
+      <!--Update, buttons will be made more descriptive along with a the full decision to color the buttons with command danger, to give better color contrast for visually impaired and let those with autism know what they are clicking.-->
     </div>
 
     <!--  script code to add navbar -->
