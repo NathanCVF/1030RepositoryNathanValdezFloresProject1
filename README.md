@@ -23,5 +23,5 @@ This is what you will make a copy of everytime you want to add another page
 Then you will rename it
 
 ← assets
-Drag in assets, like images or music, to add them to your project
+Drag in assets, like images or music, to add them to your project.
 
