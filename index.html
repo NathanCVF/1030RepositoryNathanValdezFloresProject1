@@ -28,198 +28,123 @@
     <div id="nav-placeholder"></div>
 
     <!-- Content of webpage -->
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h1>Nathan Valdez Flores, who am I?</h1>
+    
+<div class="container bg-body-primary">
+  <h1>Attentional Deficiancies, Possible Causes, and Solutions</h1>
+  <p>This website gives statistical facts about how many individuals suffer from attention deficiancy, and how many people go without proper diagnosis and treatment. </p>
+  <p>The website gives the user a set of listed links and websties that can take them to platforms that can diagnose whether they have deficiancy, the causes of it, and offer treatments/solutions to the problems. </p>
+  <p>The site also lets the user take a minature Stroop Test in order to better understand how strong their attention is as of now. The purpose of the website is to give easier access and directions for users to gain assistance for attention issues. </p>
     </div>
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <!--Container with the background color warning/subtle yellow with a black emphasised text-->
+    
+<div style="width: 600px; margin: auto; text-align: center;">
+  <img src="https://cdn.glitch.global/214b7bd9-ddce-4bf1-bac1-4ffadabaf84b/AttentionTrend.png?v=1746327010419" alt="Attention Trend" style="max-width: 100%;">
+</div>
+    
+    <div class="container bg-body-primary">
+      <h6>The above graph is free to the public from a NIH.gov</h6>
       <p>
-        I am a more mellow individual with a Hispanic background. Born in Denver
-        Colorado, I've lived here my whole life. My current career goal is to be
-        a game developer. I have a 4 year old dog named Jade, well we call her
-        that but her full name is Bella Jade.
+        The graph above is an older study shown following a trend of increased attentional issues for children. A simlar case can be found for adults as well. This only accounts for those officially diagnosed.<p>
+      
       </p>
-    </div>
-
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h2>What Are My Achievements?</h2>
-
-      <ol>
-        <li>Managed to enter a college despite facing mental health issues</li>
-        <li>Began working towards improvement of mental health</li>
-        <li>Invested in expressive arts and crafts</li>
-      </ol>
-    </div>
-    <!--Ol and Li will be used for most of the website, unless it is a summary, this will create a numerically ordered list to make it easier for those with autism and dyslexia-->
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h2>Major and college</h2>
-      <p>
-        I am a student at MSU Denver, this is my first year at the college. My
-        major is computer science, and I do not have a minor yet.
       </p>
-      <a
-        href="https://www.msudenver.edu/computer-sciences/"
-        class="btn btn-danger"
-        role="button"
-        >Click here to see more info on my major</a
-      >
-      <!--From here on, we will use buttons with class="btn btn-#" and role=button, high contrast. It is easier for those with motor disabilitie, as it is doesnt need the same precision to click.-->
-    </div>
-
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h2>What are my technical/usable skills?</h2>
+      <h2>Information about attention issues in the coming years</h2>
       <ol>
-        <li>Basic graphic design level</li>
-        <li>3d modeling</li>
-      </ol>
-      <h2>What are my soft and basic skills?</h2>
-      <ol>
-        <li>Critical thinking</li>
-        <li>Adaptabilty</li>
-        <li>Problem solving</li>
-        <li>Emotional intelligence</li>
-      </ol>
-      <h2>Do I know any other languages and what kinds am I learning?</h2>
-      <ol>
-        <li>Medium level Spanish</li>
-        <li>Beginner level French</li>
-        <li>Beginner level Danish</li>
-      </ol>
+        <li>About 11.4% of adolecents Are diagnosed with ADHD</li>
+        <li>About 4-5% of adults Are diagnosed with ADHD</li>
+        <li>78% of diagnosed adolecents have other condidtions that contribute to attentional issues</li>
+        <li>Most adults were diagnosed with ADHD and attention issues later in their lives</li>
+        <li>30% of adults with anxiety and depression have difficulty with attention</li>
+        <li>40% of adults with attention issues also have poor sleeping habits</li>
+        <li>Over half of online users suffer attention decline from excessive screentime</li>
+        <li>Over 10% of youths who use substances end up with attention issues</li>
+    </ol>
+    
     </div>
+  <div class="container bg-body-primary">
+<!--The preset proportions to the dropdown boxes, box color is primarily decided by background color-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #120;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: white;
+  text-align: left;
+  outline: white;
+  font-size: 15px;
+}
 
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h2>What are the things I enjoy?</h2>
-      <ol>
-        <li>Video games</li>
-        <li>2d art</li>
-        <li>3d art</li>
-        <li>Music</li>
-        <li>Cosplay</li>
-        <li>Gym workouts</li>
-        <li>Playing with my chihuahua</li>
-      </ol>
-    </div>
-    <!--Concerning Carosel, attempted shrinking crashes, but ultimately functional-->
+.active, .collapsible:hover {
+  background-color: #555;
+}
 
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <title>Carousel</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      </head>
-      <body>
-        <div class="container bg-warning-subtle">
-          <h2>What I Love Having the Most</h2>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li
-                data-target="#myCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-            <!--The images I have given are being sorted in order of where they are. We always start at 0 to demonstrate the first image or term. This segment decides what order my images will transition to, while class-"active" will tell it to turn on and transitioning imagew.-->
-            <!--The class=items are variables that will be sorted and listed in carousel indicators as "targets", or the objects that will be affected-->
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img
-                  src="https://cdn.pixabay.com/photo/2013/07/12/18/42/paintbrush-153754_1280.png"
-                  alt="Art"
-                  style="width: 50%"
-                />
-              </div>
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+<head>
+<body>
 
-              <div class="item">
-                <img
-                  src="https://cdn.pixabay.com/photo/2020/05/15/09/06/ps4-5172918_1280.png"
-                  alt="PS4 Controller"
-                  style="width: 75%"
-                />
-              </div>
 
-              <div class="item">
-                <img
-                  src="https://cdn.pixabay.com/photo/2020/11/12/05/25/music-5734435_1280.png"
-                  alt="Music"
-                  style="width: 75%"
-                />
-              </div>
+  <h2>Resources for Diagnosis, Causes, and Treatments</h2>
+  <!--Class item that places internal content into a dropdown box, later javascript must be used to decide how and when the dropdown box activates-->
+<button type="button" class="collapsible">ADHD and Other Developmental Factors</button>
+<div class="content">
+  <ol>
+<li><a href="https://www.mayoclinic.org/diseases-conditions/adult-adhd/symptoms-causes/syc-20350878" target="_blank" rel="noopener noreferrer">Visit Mayo Clinic for Adult Symptoms and Appointments</a></li>
+<li><a href="https://www.nhs.uk/conditions/adhd-children-teenagers/">Visit NHS for Adolecent ADHD and Solutions</a></li>
+<li><a href="https://my.clevelandclinic.org/health/diseases/4784-attention-deficithyperactivity-disorder-adhd">Visit the Cleveland Clinic for the Signs and Solutions for ADHD</a></li>
+  </ol>
+</div>
+<button type="button" class="collapsible">Depression and Mental Health Factors</button>
+<div class="content">
+  <ol>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6838308/#:~:text=Cognitive%20dysfunction%20is%20included%20as,the%20mood%20features%20of%20MDD.">Visit the Public Med Center for More Info on How Depression Affects Attention</a></li>  
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S187620182030472X#:~:text=In%20conclusion%2C%20this%20systematic%20review,in%20more%20detail%20according%20to">Visit Science Direct.com for More Info on How Depression Affects Attention</a></li>
+<li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjwiMHF1oKNAxUpB60GHYZgI3cYABAAGgJwdg&co=1&gclid=Cj0KCQjwt8zABhDKARIsAHXuD7bhOaYwCnzs0ieAGbEhgfgI9G_5khq3Cd3giDmJ76yhEmQrcqfGoBYaAg_DEALw_wcB&ohost=www.google.com&cid=CAESVeD2jnQ4xVQKe_QjNYwdeco8a_EefenLvet--HTfDJosBexYvDcXHGjJc34YKZCbHv99ss_936L0PIUMzTsIAxmAxEciOQHeSRhDY9SfQ1GTqtgtDAg&sig=AOD64_1hjiiQmIXdCYoQBQjydjY2U6uKfQ&q&adurl&ved=2ahUKEwjV5LvF1oKNAxUJAzQIHXs-O20Q0Qx6BAgwEAE">Visit Peaksrecovery.com for Treatments and Solutions</a></li> 
+  </ol>
+</div>
+<button type="button" class="collapsible"> Medical Conditions</button>
+<div class="content">
+  <ol>
+    <li><a href="https://resources.healthgrades.com/right-care/symptoms-and-conditions/concentration-difficulty#:~:text=Medical%20causes%20of%20concentration%20difficulty,Vision%20disorders">Visit Healthgrade.com to See Possible Medical Issues Affecting Attention</a></li>  
+    <li><a href="https://mydoctor.kaiserpermanente.org/ncal/structured-content/attention-problems-in-adults-2001470">Visit My Doctor Online to See Possible Medical Issues Affecting Attention in Adults</a></li>  
+    <li><a href="https://www.thebrainworkshop.com/blog/what-disorders-cause-a-short-attention-span/">Visit the Brain Workshop to See More Possible Medical Issues Affecting Attention</a></li>  
 
-              <div class="item">
-                <img
-                  src="https://cdn.pixabay.com/photo/2024/09/23/19/50/ai-generated-9069918_1280.png"
-                  alt="Chihuahua"
-                  style="width: 50%"
-                />
-              </div>
-            </div>
-            <!--These are the images that the carousel will panel through. More specifically they are classified as items and variables for the carousel to number and organize.-->
-            <!--Concerning Carousel, functional but seems heavily dependent on the entire structure, or dome other compromise. Size still cannot be fixed but at least now it panels automatically.-->
+  </ol>
+</div>
+<button type="button" class="collapsible"> Environment and Substance Abuse</button>
+<div class="content">
+  <ol>
+    <li><a href="https://americanaddictioncenters.org/health-complications-addiction/central-nervous-system#:~:text=Substance%20use%20has%20both%20immediate,malnutrition%2C%20and%20combined%20polysubstance%20effects.">Visit the American Addictions Center to See how Substances Affect Attention</a></li>  
+    <li><a href="https://childmind.org/article/adhd-and-substance-abuse/">Visit Child Mind Institute to See How Substances Affect Attention in Youth and Solutions</a></li>  
+    <li><a href="https://www.addictionhelper.com/addiction/symptoms-signs/problems-with-attention-and-memory/">Visit Addiction Helper to See More About How Substance Influence on Attention and Treatment</a></li>  
 
-            <!-- Left and right controls -->
-            <a
-              class="left carousel-control"
-              href="#myCarousel"
-              data-slide="prev"
-            >
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="right carousel-control"
-              href="#myCarousel"
-              data-slide="next"
-            >
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <!--To my understanding, span class in a sense acts as an ingrained text container, it can even be given a command or function. For the carousel it ends up allowing us to both manually and automatically change slides with something like the right carousel-control, as it affects listed and named variables like the ones I kept as "#myCarousel". What's written inside this bit doesn't seem to affect the outside appearance, so I can edit what is necessary without breaking the code.-->
-          </div>
-        </div>
-      </body>
-    </html>
-
-    <div class="container bg-warning-subtle text-black-emphasis p-3">
-      <h2>More Information About What I Like and My Favorites</h2>
-      <p>
-        Video games are one of my favorite pass times, and I like quite a few. I
-        primarily like shooters and soulslike games, with my favorite game being
-        Destiny 2. Don't get your hopes up though, the game is a loose cannon
-      </p>
-
-      <a
-        href="https://www.youtube.com/watch?v=k5jSaZn3zMk"
-        class="btn btn-danger"
-        role="button"
-        >Click here if you want to see what Destiny 2 is about</a
-      >
-      <!--The first video I've placed in, the video is chosen to have captions to make it so those who are deaf can read them if interested-->
-      <p>
-        For my other favorite pass time, it would be digital art. It could be 2d
-        or 3d, I love both quite a bit. But among them, my favorite art would be
-        anime art, or in other words manga. Though I'm a bit darker on how I do
-        it. I plan on making my own little story someday.
-      </p>
-      <a
-        href="https://www.wingedcanvas.com/single-post/the-anime-art-style-why-is-it-so-popular"
-        class="btn btn-danger"
-        role="button"
-        >Click here to explore different manga art styles and genres</a
-      >
-      <!--Update, buttons will be made more descriptive along with a the full decision to color the buttons with command danger, to give better color contrast for visually impaired and let those with autism know what they are clicking.-->
-    </div>
+  </ol>
+</div>
+  <!--Lists make it far easier for those with ADHD, attention issues, and screen readers to find sources and not get lost-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+<!--Simply put, function will will wait and activate when clicked on which collapses or unfurls the dropdown boxes.--> 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
 
     <!--  script code to add navbar -->
     <script>
